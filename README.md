@@ -2,7 +2,6 @@
 # Mailer: A Java Email Application
 
 Mailer is a Java application that allows you to send out emails. Has a driver for sending simple emails to a
-
 single recipient and supports command line usage with file input for emailing html to multiple recipients. 
 
 
