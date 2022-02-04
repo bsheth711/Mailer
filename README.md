@@ -23,7 +23,7 @@ Note: This application was developed and tested with Java 11. It may or may not 
 
 ## How to Run with Command Line Arguments
 
-	java -cp "activation.jar;javax.mail.jar;." Mailer [service] [recipients] [from] [password] [subject] [message]
+	java -cp "activation.jar;javax.mail.jar;." Mailer [service] [recipients] [from] [password] "[subject]" [message]
 
 
 [service]: The respective number of one of the following email service providers:
@@ -38,17 +38,14 @@ Since it only contains a single column, it is basically a list with an email on 
 
 [password]: The (hopefully application specific) password of the sender.
 
-[subject]: The subject line of the email.
+[subject]: The subject line of the email. Must be enclosed by quotes.
 
 [message]: An html file containing the message.
 
 
 Example usage:
 	
-	java -cp "activation.jar;javax.mail.jar;." Mailer 1 emails.csv myemail@icloud.com mypassword Hello! message.html
-
-
-Known bug: When using Mailer form the command line, multi-word subjects cannot be used.
+	java -cp "activation.jar;javax.mail.jar;." Mailer 1 emails.csv myemail@icloud.com mypassword "Hello there!" message.html
 
 
 Author: Benjamin Sheth
