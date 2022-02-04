@@ -5,8 +5,7 @@ Mailer is a Java application that allows you to send out emails. Has a driver fo
 single recipient and supports command line usage with file input for emailing html to multiple recipients. 
 
 
-Note: Generating and using an application specific password for the email service you use  
-is highly recommended. 
+Note: Generating and using an application specific password for the email service you use is highly recommended. 
 
 
 Note: This application was developed and tested with Java 11. It may or may not work with other versions of Java. 
